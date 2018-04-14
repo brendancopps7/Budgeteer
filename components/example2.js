@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, Button } from "react-native";
 
-export default class Example extends React.Component {
+export default class Button extends React.Component {
   render() {
     return (
       <Button style={styles.container}>
@@ -17,7 +17,7 @@ export default class Example extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#85bb65",
     alignItems: "center",
     justifyContent: "center"
   }
