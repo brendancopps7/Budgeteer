@@ -5,6 +5,7 @@ export default class Example1 extends React.Component {
     render() {
       return (
         <View style={styles.container}>
+          <Text></Text>
           <Button
             title="Add New Charge"
           />
@@ -17,7 +18,7 @@ export default class Example1 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#9533FF',
+    backgroundColor: '#FFE5B4',
     alignItems: 'center',
     justifyContent: 'center',
   },
