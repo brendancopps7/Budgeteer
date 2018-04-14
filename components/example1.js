@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button } from 'react-native'
 
 
 export default class Example1 extends React.Component {
-  _onPressButton() {}
     render() {
       return (
         <view>
