@@ -1,18 +1,16 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Button, View } from 'react-native'
+import {inject} from 'mobx-react'
 
+@inject ('page')
 export default class Menu extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
-        <Text>Menu</Text>
+      <View style={styles.container}>
+        <Button title="Home" onPress={this.props.page.home}/>
+        <Button title="Dictionary" onPress={this.props.page.dictionary}/>
+        <Button title="Monthly Breakdown" onPress={this.props.page.monthly}/>
+        <Button title="Profile" onPress={this.props.page.profile}/>
       </View>
     )
   }
@@ -22,7 +20,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'top',
+    justifyContent: 'top',
+    marginTop: 20
   },
 })

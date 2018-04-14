@@ -1,8 +1,10 @@
 import React from 'react'
-import Example1 from './components/example1'
+import Context from './components/context'
 import Menu from './components/menu'
 import config from './oauth2-config'
 import SideMenu from 'react-native-side-menu'
+import Page from './store/page'
+import { Provider } from 'mobx-react'
 
 export default class App extends React.Component {
   constructor(){
@@ -13,9 +15,11 @@ export default class App extends React.Component {
   render() {
     let menu = <Menu/>
     return (
-      <SideMenu menu={menu}>
-        <Example1/>
-      </SideMenu>
+      <Provider page={Page}>
+        <SideMenu menu={menu}>
+          <Context/>
+        </SideMenu>
+      </Provider>
     )
   }
 }
