@@ -1,5 +1,5 @@
 import React from 'react'
-import Example from './components/example'
+import Example1 from './components/example1'
 import config from './oauth2-config'
 
 export default class App extends React.Component {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Example/>
+      <Example1/>
     )
   }
 }
