@@ -2,6 +2,7 @@ import { action, useStrict, extendObservable } from 'mobx'
 import Dictionary from '../components/dictionary'
 import ChargeForm from '../components/chargeForm'
 import Homepage from '../components/homepage'
+import Monthly from '../components/monthly'
 
 class Page {
   constructor(){
@@ -31,7 +32,7 @@ class Page {
     this.currentPageComponent = Dictionary
   }
   @action monthly(){
-    this.currentPageComponent = null
+    this.currentPageComponent = Monthly
   }
   @action profile(){
     this.currentPageComponent = null
