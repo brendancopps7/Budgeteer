@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, Button } from "react-native";
 
-export default class Example extends React.Component {
+export default class Example2 extends React.Component {
   render() {
     return (
       <Button style={styles.container}>
