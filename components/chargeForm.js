@@ -1,21 +1,25 @@
-import React from "react";
-import { StyleSheet, Text, View, Button, Form, Input } from "react-native";
+import React from "react"
+import t from "tcomb-form-native"
+import { StyleSheet, Text, View, Button } from "react-native"
 
-export default class chargeForm extends React.Component {
+var Form = t.form.Form
+
+const chargeForm = t.struct({
+  charge: t.String,
+  chargeAmt: t.Number
+})
+
+export default class ChargeForm extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Form className="chargeForm">
-          <Input type="text" name="charge" placeholder="charge" />
-          <Input type="number" name="charge-amt" placeholder="100.00" />
-          <Button
-            onPress={}
-            title="Submit"
-            color="#85bb65"
-          />
-        </Form>
+        <Form type={chargeForm}/>
+        <Button
+          title="Submit"
+          color="#85bb65"
+        />
       </View>
-    );
+    )
   }
 }
 
@@ -26,4 +30,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center"
   }
-});
+})
