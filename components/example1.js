@@ -3,20 +3,23 @@ import { StyleSheet, Text, View, Button } from 'react-native'
 
 
 export default class Example1 extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Header</Text>
-        <Button
-          onPress={() => {
-            Alert.alert('You tapped the button!');
-          }}
-          title="Press Me"
-        />
-        <Text>Footer</Text>
-      </View>
-    )
-  }
+  _onPressButton() {}
+    render() {
+      return (
+        <view>
+          <button
+            style={styles.container}
+            onPress={this._onPressButton}
+            title="Add New Charge"
+          />
+          <form className="new-charge">
+            <input type="text" name="charge" placeholder="charge" />
+            <input type="number" name="charge-amt" placeholder="100.00" />
+          </form>
+        </view>
+      );
+    }
+   
 }
 
 const styles = StyleSheet.create({
@@ -26,9 +29,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  buttonStyle: 
-  {
-
-
-  }
 })
