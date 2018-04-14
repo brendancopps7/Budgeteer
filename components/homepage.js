@@ -1,13 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 
-export default class Example1 extends React.Component {
+export default class homepage extends React.Component {
     render() {
       return (
         <View style={styles.container}>
-          <Text></Text>
+          <Text>Monthly Budget: </Text>
+          <Text>What's Left: </Text>
           <Button
-            title="Add New Charge"
+            title="Create Charge"
           />
         </View>
       );
@@ -18,7 +19,7 @@ export default class Example1 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#A2FFB1',
     alignItems: 'center',
     justifyContent: 'center',
   },
