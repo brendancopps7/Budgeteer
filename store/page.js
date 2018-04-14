@@ -1,9 +1,16 @@
 import { action, useStrict, extendObservable } from 'mobx'
+import Dictionary from '../components/dictionary'
+import ChargeForm from '../components/chargeForm'
 
-export default class Page {
+class Page {
   constructor(){
     let addtlProps = {
-      currentPageComponent: null
+      currentPageComponent: null,
+      dictionarySearch: '',
+      financialTerms: [
+        {term: 'Taxes', descr: 'Scary'},
+        {term: 'Loans', descr: ''},
+      ]
     }
     extendObservable(this, addtlProps)
   }
@@ -12,10 +19,10 @@ export default class Page {
     this.currentPageComponent = null
   }
   @action newCharge(){
-    this.currentPageComponent = null
+    this.currentPageComponent = ChargeForm
   }
   @action dictionary(){
-    this.currentPageComponent = null
+    this.currentPageComponent = Dictionary
   }
   @action monthly(){
     this.currentPageComponent = null
@@ -24,3 +31,6 @@ export default class Page {
     this.currentPageComponent = null
   }
 }
+
+const page = new Page()
+export default page
