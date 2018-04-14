@@ -1,11 +1,12 @@
 import { action, useStrict, extendObservable } from 'mobx'
 import Dictionary from '../components/dictionary'
 import ChargeForm from '../components/chargeForm'
+import Homepage from '../components/homepage'
 
 class Page {
   constructor(){
     let addtlProps = {
-      currentPageComponent: null,
+      currentPageComponent: Homepage,
       dictionarySearch: '',
       financialTerms: [
         {term: 'Taxes', descr: 'Scary'},
@@ -13,10 +14,15 @@ class Page {
       ]
     }
     extendObservable(this, addtlProps)
+    this.home = this.home.bind(this)
+    this.newCharge = this.newCharge.bind(this)
+    this.dictionary = this.dictionary.bind(this)
+    this.monthly = this.monthly.bind(this)
+    this.profile = this.profile.bind(this)
   }
 
   @action home(){
-    this.currentPageComponent = null
+    this.currentPageComponent = Homepage
   }
   @action newCharge(){
     this.currentPageComponent = ChargeForm
