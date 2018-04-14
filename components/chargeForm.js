@@ -1,6 +1,7 @@
 import React from "react";
 import t from "tcomb-form-native";
 import { StyleSheet, Text, View, TouchableHighlight } from "react-native";
+import {inject} from 'mobx-react'
 
 var Form = t.form.Form;
 
@@ -9,7 +10,17 @@ const chargeForm = t.struct({
   chargeAmt: t.Number
 });
 
+@inject('page')
 export default class ChargeForm extends React.Component {
+  constructor(){
+    super()
+    this.onPress = this.onPress.bind(this)
+  }
+
+  onPress(){
+    this.props.page.home()
+  }
+
   render() {
     return (
       <View style={styles.container}>
