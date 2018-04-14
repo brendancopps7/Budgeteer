@@ -7,7 +7,7 @@ import {inject, observer} from 'mobx-react'
 export default class Context extends React.Component {
   render() {
     return (
-      <Example1/>
+      <ChargeForm/>
     )
   }
 }

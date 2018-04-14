@@ -15,6 +15,7 @@ export default class Dictionary extends React.Component{
     const filteredData = this.props.page.financialTerms.filter(createFilter(this.props.page.dictionarySearch, KEYS_TO_FILTERS))
     return (
       <View style={styles.container}>
+        <Text>Financial Terms</Text>
         <SearchInput
           onChangeText={(term) => { this.searchUpdated(term) }}
           style={styles.searchInput}
