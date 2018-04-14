@@ -1,36 +1,41 @@
-import { action, useStrict, extendObservable } from 'mobx'
-import Dictionary from '../components/dictionary'
-import ChargeForm from '../components/chargeForm'
+import { action, useStrict, extendObservable } from "mobx";
+import Dictionary from "../components/dictionary";
+import ChargeForm from "../components/chargeForm";
 
 class Page {
-  constructor(){
+  constructor() {
     let addtlProps = {
       currentPageComponent: null,
-      dictionarySearch: '',
+      dictionarySearch: "",
       financialTerms: [
-        {term: 'Taxes', descr: 'Scary'},
-        {term: 'Loans', descr: ''},
+        { term: "Taxes", descr: "Scary" },
+        { term: "Loans", descr: "" }
       ]
-    }
-    extendObservable(this, addtlProps)
+    };
+    extendObservable(this, addtlProps);
   }
 
-  @action home(){
-    this.currentPageComponent = null
+  @action
+  home() {
+    this.currentPageComponent = null;
   }
-  @action newCharge(){
-    this.currentPageComponent = ChargeForm
+  @action
+  newCharge() {
+    this.currentPageComponent = ChargeForm;
   }
-  @action dictionary(){
-    this.currentPageComponent = Dictionary
+  @action
+  dictionary() {
+    this.currentPageComponent = Dictionary;
   }
-  @action monthly(){
-    this.currentPageComponent = null
+  @action
+  monthly() {
+    this.currentPageComponent = null;
   }
-  @action profile(){
-    this.currentPageComponent = null
+  @action
+  profile() {
+    this.currentPageComponent = Profile;
   }
 }
 
-const page = new Page()
-export default page
+const page = new Page();
+export default page;
