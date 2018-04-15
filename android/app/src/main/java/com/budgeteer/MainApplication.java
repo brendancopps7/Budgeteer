@@ -30,8 +30,6 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new RNFirebasePackage(),
             new SvgPackage(),
-            new RNFirebasePackage(),
-          new RNFirebasePackage(),
           new RNFirebaseDatabasePackage()
       );
     }

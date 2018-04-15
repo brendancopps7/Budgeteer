@@ -5,6 +5,7 @@ INJECTED from /GitSourcetree/Budgeteer/android/app/src/main/AndroidManifest.xml:
 INJECTED from /GitSourcetree/Budgeteer/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /GitSourcetree/Budgeteer/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from [:react-native-firebase] /GitSourcetree/Budgeteer/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-svg] /GitSourcetree/Budgeteer/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/cricket/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/1cf5a0ba52f243c1f44f82c7f4977b4b/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/cricket/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/464521cebaece6736e2aa4a84e725b8f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-base:12.0.0] /Users/cricket/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/a92b52a6a8dc6dfe608e679d55e7e1db/AndroidManifest.xml:17:1-29:12
@@ -175,6 +176,8 @@ INJECTED from /GitSourcetree/Budgeteer/android/app/src/main/AndroidManifest.xml
 INJECTED from /GitSourcetree/Budgeteer/android/app/src/main/AndroidManifest.xml
 MERGED from [:react-native-firebase] /GitSourcetree/Budgeteer/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase] /GitSourcetree/Budgeteer/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /GitSourcetree/Budgeteer/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /GitSourcetree/Budgeteer/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/cricket/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/1cf5a0ba52f243c1f44f82c7f4977b4b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/cricket/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/1cf5a0ba52f243c1f44f82c7f4977b4b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/cricket/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/464521cebaece6736e2aa4a84e725b8f/AndroidManifest.xml:20:5-43
