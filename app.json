@@ -3,9 +3,11 @@
     "sdkVersion": "26.0.0",
     "ios": {
       "bundleIdentifier": "com.codefest.budgeteer"
-     },
-     "android": {
-       "package": "com.codefest.budgeteer"
-     }
-  }
+    },
+    "android": {
+      "package": "com.codefest.budgeteer"
+    }
+  },
+  "name": "Budgeteer",
+  "displayName": "Budgeteer"
 }

@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'top',
-    justifyContent: 'top',
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
     paddingTop: 20,
     marginTop: 20
   },

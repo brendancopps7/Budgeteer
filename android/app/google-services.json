@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "608905158195",
+    "firebase_url": "https://tryingstuff-1279c.firebaseio.com",
+    "project_id": "tryingstuff-1279c",
+    "storage_bucket": "tryingstuff-1279c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608905158195:android:4d082c5d70002c07",
+        "android_client_info": {
+          "package_name": "com.budgeteer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608905158195-m3v4p0d0120iqdmi220lvr8b88tbo77k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALiZJIHXBI7QcH6WtGl3W2gU6iRrwePUA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

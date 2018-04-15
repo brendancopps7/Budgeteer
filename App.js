@@ -4,11 +4,13 @@ import Menu from './components/menu'
 import SideMenu from 'react-native-side-menu'
 import Page from './store/page'
 import { Provider } from 'mobx-react'
+import firebase from 'react-native-firebase'
 
 export default class App extends React.Component {
   constructor(){
     super()
-    let scope = 'https://www.googleapis.com/auth/sqlservice.admin'
+    firebase.database()
+    .goOnline()
   }
 
   render() {
