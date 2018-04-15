@@ -34,10 +34,12 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* BudgeteerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BudgeteerTests.m */; };
+		48EFEDFA8D0C414C827D4F22 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CC06C337A44C57BC4F711E /* libRNSVG.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		6D075F8660528C9F96525AD8 /* libPods-BudgeteerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5695BDD879D26EDF46ACBD44 /* libPods-BudgeteerTests.a */; };
 		6D47299F2082F13B009C165D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D47299E2082F13B009C165D /* GoogleService-Info.plist */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		88108B0997F24595A5A2A738 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 558D6DB060C1447AB37F620C /* libRNSVG-tvOS.a */; };
 		A6AE55F27E754BF5618F8E4F /* libPods-Budgeteer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A60F3C4FDB998D220E9577 /* libPods-Budgeteer-tvOSTests.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		CFC107D26CB242A094A2AC31 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCCC2D97C8E42D8A24963C3 /* libRNFirebase.a */; };
@@ -304,6 +306,20 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
 		};
+		6D9AF9F12083AC8900286A06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049704832EEC463693BFDB1E /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = RNSVG;
+		};
+		6D9AF9F32083AC8900286A06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049704832EEC463693BFDB1E /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94DDAC5C1F3D024300EED511;
+			remoteInfo = "RNSVG-tvOS";
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -338,6 +354,8 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BudgeteerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeteerTests.m; sourceTree = "<group>"; };
 		03C96DB6537940D8B10BA4BC /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		049704832EEC463693BFDB1E /* RNSVG.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
+		07CC06C337A44C57BC4F711E /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Budgeteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgeteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +374,7 @@
 		3C19FAA2FDB73CBF2DF2E524 /* Pods-BudgeteerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgeteerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BudgeteerTests/Pods-BudgeteerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DCCC2D97C8E42D8A24963C3 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		49A60F3C4FDB998D220E9577 /* libPods-Budgeteer-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Budgeteer-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		558D6DB060C1447AB37F620C /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; };
 		5695BDD879D26EDF46ACBD44 /* libPods-BudgeteerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BudgeteerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5FB07F55D082756586FFDFC1 /* Pods-BudgeteerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgeteerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BudgeteerTests/Pods-BudgeteerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -397,6 +416,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				F97CB1706974D75EA10B1FB4 /* libPods-Budgeteer.a in Frameworks */,
 				CFC107D26CB242A094A2AC31 /* libRNFirebase.a in Frameworks */,
+				48EFEDFA8D0C414C827D4F22 /* libRNSVG.a in Frameworks */,
+				88108B0997F24595A5A2A738 /* libRNSVG-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +600,8 @@
 			isa = PBXGroup;
 			children = (
 				3DCCC2D97C8E42D8A24963C3 /* libRNFirebase.a */,
+				07CC06C337A44C57BC4F711E /* libRNSVG.a */,
+				558D6DB060C1447AB37F620C /* libRNSVG-tvOS.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -587,6 +610,15 @@
 			isa = PBXGroup;
 			children = (
 				6D47299D2082EC80009C165D /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D9AF9ED2083AC8800286A06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D9AF9F22083AC8900286A06 /* libRNSVG.a */,
+				6D9AF9F42083AC8900286A06 /* libRNSVG-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -616,6 +648,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				03C96DB6537940D8B10BA4BC /* RNFirebase.xcodeproj */,
+				049704832EEC463693BFDB1E /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -837,6 +870,10 @@
 				{
 					ProductGroup = 6D4729992082EC80009C165D /* Products */;
 					ProjectRef = 03C96DB6537940D8B10BA4BC /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = 6D9AF9ED2083AC8800286A06 /* Products */;
+					ProjectRef = 049704832EEC463693BFDB1E /* RNSVG.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1093,6 +1130,20 @@
 			fileType = archive.ar;
 			path = libRNFirebase.a;
 			remoteRef = 6D47299C2082EC80009C165D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9AF9F22083AC8900286A06 /* libRNSVG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSVG.a;
+			remoteRef = 6D9AF9F12083AC8900286A06 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9AF9F42083AC8900286A06 /* libRNSVG-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSVG-tvOS.a";
+			remoteRef = 6D9AF9F32083AC8900286A06 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -1406,6 +1457,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1427,6 +1480,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1492,6 +1547,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1521,6 +1578,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1552,6 +1611,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Budgeteer-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1577,6 +1638,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Budgeteer-tvOSTests";

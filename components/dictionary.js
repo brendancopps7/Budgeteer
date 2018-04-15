@@ -2,11 +2,33 @@ import React from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
 import SearchInput, { createFilter } from 'react-native-search-filter'
 import {inject, observer} from 'mobx-react'
+import firebase from 'react-native-firebase'
 
-const KEYS_TO_FILTERS = ['term', 'descr']
+const KEYS_TO_FILTERS = ['term', 'descr', 'related']
 
 @inject('page') @observer
 export default class Dictionary extends React.Component{
+  constructor(){
+    super()
+    let list = []
+    let ref = firebase.database().ref('tryingstuff-1279c/Dictionary').orderByValue('Term').limitToFirst(100)
+    ref.on('child_added', dataSnapshot => {
+      let i = 0
+      let obj = {}
+      dataSnapshot.forEach(item => {
+        if (i == 2)
+          obj.term = item.val()
+        else if (i == 0)
+          obj.descr = item.val()
+        else
+          obj.related = item.val()
+        i++
+      })
+      list.push(obj)
+      this.props.page.financialTerms = list
+    })
+  }
+
   searchUpdated(term) {
     this.props.page.dictionarySearch = term
   }
@@ -21,9 +43,9 @@ export default class Dictionary extends React.Component{
           placeholder="Type a message to search"
           />
         <ScrollView>
-          {filteredData.map(term => {
+          {filteredData.map((term, index) => {
             return (
-              <TouchableOpacity onPress={()=>alert(term.term)} key={term.id} style={styles.termItem}>
+              <TouchableOpacity onPress={()=>alert(term.term)} key={index} style={styles.termItem}>
                 <View>
                   <Text>{term.term}</Text>
                   <Text style={styles.termSubject}>{term.descr}</Text>

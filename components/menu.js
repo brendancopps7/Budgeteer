@@ -11,6 +11,7 @@ export default class Menu extends React.Component {
         <Button title="Dictionary" onPress={this.props.page.dictionary}/>
         <Button title="Monthly Breakdown" onPress={this.props.page.monthly}/>
         <Button title="Profile" onPress={this.props.page.profile}/>
+        <Button title="What If" onPress={this.props.page.lookahead}/>
       </View>
     )
   }

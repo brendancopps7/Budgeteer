@@ -1,0 +1,23 @@
+dependencies: \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTBridge.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTDefines.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /GitSourcetree/Budgeteer/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /GitSourcetree/Budgeteer/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTLog.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTAssert.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Base/RCTUtils.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /GitSourcetree/Budgeteer/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h

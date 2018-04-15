@@ -42,6 +42,7 @@ export default class ChargeForm extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'space-around',
     backgroundColor: "#fff",
     padding: 20,
   },
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
 
   button: {
     height: 36,
+    flex: 0.8,
     backgroundColor: "#48BBEC",
     borderColor: "#48BBEC",
     borderWidth: 1,

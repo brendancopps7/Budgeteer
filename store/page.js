@@ -1,9 +1,10 @@
-import { action, useStrict, extendObservable } from "mobx"
+import { action, useStrict, extendObservable, computed } from "mobx"
 import Dictionary from "../components/dictionary"
 import ChargeForm from "../components/chargeForm"
 import Homepage from '../components/homepage'
 import Monthly from '../components/monthly'
 import Profile from '../components/profile'
+import Lookahead from '../components/lookahead'
 
 class Page {
   constructor() {
@@ -14,7 +15,13 @@ class Page {
       financialTerms: [
         { term: "Taxes", descr: "Scary" },
         { term: "Loans", descr: "" }
-      ]
+      ],
+      incomeSliderVal: 0.33,
+      rentSliderVal: 0.33,
+      foodSliderVal: 0.2,
+      travelSliderVal: 0.1,
+      entertainmentSliderVal: 0.2,
+      otherSliderVal: 0.17
     }
     extendObservable(this, addtlProps)
     this.home = this.home.bind(this)
@@ -22,6 +29,15 @@ class Page {
     this.dictionary = this.dictionary.bind(this)
     this.monthly = this.monthly.bind(this)
     this.profile = this.profile.bind(this)
+    this.lookahead = this.lookahead.bind(this)
+  }
+
+  @computed get sliderTotal(){
+    return parseFloat(Math.round((this.rentSliderVal + this.foodSliderVal + this.travelSliderVal + this.entertainmentSliderVal + this.otherSliderVal) * 10000) / 100).toFixed(2)
+  }
+
+  @computed get sliderIsAbove(){
+    return this.sliderTotal > 100
   }
 
   @action home(){
@@ -43,6 +59,11 @@ class Page {
   @action profile() {
     this.currentPageComponent = Profile
     this.title = 'Profile'
+  }
+  @action lookahead() {
+    console.log('lookahead')
+    this.currentPageComponent = Lookahead
+    this.title = 'What If?'
   }
 }
 
