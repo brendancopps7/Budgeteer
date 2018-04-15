@@ -1,26 +1,42 @@
 import React from "react";
 import t from "tcomb-form-native";
 import { StyleSheet, Text, View, TouchableHighlight } from "react-native";
+import {inject} from 'mobx-react'
 
 var Form = t.form.Form;
 
 const chargeForm = t.struct({
-  charge: t.String,
-  chargeAmt: t.Number
+  description: t.String,
+  amount: t.Number
 });
 
+@inject('page')
 export default class ChargeForm extends React.Component {
+  constructor(){
+    super()
+    this.onPress = this.onPress.bind(this)
+  }
+
+  onPress(){
+    this.props.page.home()
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Form type={chargeForm} />
-        <TouchableHighlight
-          style={styles.button}
-          onPress={this.onPress}
-          underlayColor="#99d9f4"
-        >
-          <Text style={styles.buttonText}>Submit</Text>
-        </TouchableHighlight>
+        <View style={{paddingBottom: 10,alignItems: "center"}}>
+          <Text>New Charge</Text>
+        </View>
+        <View style={{flex: 1,justifyContent: "center"}}>
+          <Form type={chargeForm} />
+          <TouchableHighlight
+            style={styles.button}
+            onPress={this.onPress}
+            underlayColor="#99d9f4"
+          >
+            <Text style={styles.buttonText}>Submit</Text>
+          </TouchableHighlight>
+        </View>
       </View>
     );
   }
@@ -30,8 +46,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    padding: 20,
   },
 
   buttonText: {

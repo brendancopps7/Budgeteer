@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
@@ -11,6 +12,27 @@ export default class homepage extends React.Component {
       </View>
     );
   }
+=======
+import React from 'react'
+import { StyleSheet, Text, View, Button } from 'react-native'
+import {inject} from 'mobx-react'
+
+@inject('page')
+export default class Homepage extends React.Component {
+    render() {
+      return (
+        <View style={styles.container}>
+          <Text>Monthly Budget: </Text>
+          <Text>{"What's Left: "}</Text>
+          <Button
+            title="Create Charge"
+            onPress={this.props.page.newCharge}
+          />
+        </View>
+      );
+    }
+
+>>>>>>> 79c96da28e5ad8efb317427ba4cda5dd3282bb17
 }
 
 const styles = StyleSheet.create({
