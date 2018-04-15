@@ -1,7 +1,7 @@
 import React from "react"
 import t from "tcomb-form-native"
 import { StyleSheet, Text, View, TouchableHighlight } from "react-native"
-import {inject} from 'mobx-react'
+import { inject } from 'mobx-react'
 
 var Form = t.form.Form
 
@@ -12,19 +12,19 @@ const chargeForm = t.struct({
 
 @inject('page')
 export default class ChargeForm extends React.Component {
-  constructor(){
+  constructor() {
     super()
     this.onPress = this.onPress.bind(this)
   }
 
-  onPress(){
+  onPress() {
     this.props.page.home()
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <View style={{flex: 1,justifyContent: "center"}}>
+        <View style={{ flex: 1, justifyContent: "center" }}>
           <Form type={chargeForm} />
           <TouchableHighlight
             style={styles.button}
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
+    flex: 0.8;
     height: 36,
     flex: 0.8,
     backgroundColor: "#48BBEC",

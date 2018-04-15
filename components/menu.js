@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, Button, View } from 'react-native'
-import {inject} from 'mobx-react'
+import { inject } from 'mobx-react'
 
-@inject ('page')
+@inject('page')
 export default class Menu extends React.Component {
   render() {
     return (
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "flex-start",
     paddingTop: 20,
+    paddingLeft: 20,
     marginTop: 20
   },
 })
