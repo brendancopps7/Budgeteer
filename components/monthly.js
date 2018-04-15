@@ -6,9 +6,6 @@ export default class Monthly extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{paddingBottom: 10,alignItems: "center"}}>
-          <Text style={{fontSize: 20}}>New Charge</Text>
-        </View>
         <ScrollView>
           <VictoryChart theme={VictoryTheme.material}>
             <VictoryLine style={{
@@ -40,7 +37,7 @@ export default class Monthly extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#A2FFB1',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: 20,

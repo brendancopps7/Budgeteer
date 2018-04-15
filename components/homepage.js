@@ -7,17 +7,12 @@ export default class Homepage extends React.Component {
     render() {
       return (
         <View style={styles.container}>
-          <View style={{paddingBottom: 10}}>
-            <Text style={{fontSize: 20}}>Budgeteer</Text>
-          </View>
-          <View style={{flex: 1,justifyContent: "center"}}>
-            <Text>Monthly Budget: </Text>
-            <Text>{"What's Left: "}</Text>
-            <Button
-              title="Create Charge"
-              onPress={this.props.page.newCharge}
-            />
-          </View>
+          <Text>Monthly Budget: </Text>
+          <Text>{"What's Left: "}</Text>
+          <Button
+            title="Create Charge"
+            onPress={this.props.page.newCharge}
+          />
         </View>
       )
     }
@@ -28,6 +23,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     backgroundColor: "#fff",
-    paddingTop: 20,
+    justifyContent: "center",
   }
 });

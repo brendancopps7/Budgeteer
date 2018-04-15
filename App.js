@@ -1,7 +1,6 @@
 import React from 'react'
 import Context from './components/context'
 import Menu from './components/menu'
-import config from './oauth2-config'
 import SideMenu from 'react-native-side-menu'
 import Page from './store/page'
 import { Provider } from 'mobx-react'

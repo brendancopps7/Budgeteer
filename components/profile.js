@@ -25,9 +25,6 @@ export default class Profile extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{paddingBottom: 10,alignItems: "center"}}>
-          <Text style={{fontSize: 20}}>Profile</Text>
-        </View>
         <Form type={incomeFreq} />
         <Form type={income} />
         <Form type={savingsContrib} />
@@ -54,7 +51,7 @@ export default class Profile extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 20,
+    padding: 20,
     backgroundColor: "#fff",
   },
   buttonText: {
