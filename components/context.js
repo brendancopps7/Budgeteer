@@ -20,7 +20,8 @@ export default class Context extends React.Component {
 const styles = StyleSheet.create({
   container: {
     marginTop:20,
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: "#fff"
   },
   title: {
     fontSize: 20

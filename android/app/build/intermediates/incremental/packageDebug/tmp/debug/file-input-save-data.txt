@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Apr 15 12:19:59 EDT 2018
+#Sun Apr 15 12:30:57 EDT 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/libglog_init.so
 25.base=/GitSourcetree/Budgeteer/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
