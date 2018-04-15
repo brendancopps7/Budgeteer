@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-
-export default class homepage extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Monthly Budget: </Text>
-        <Text>What's Left: </Text>
-        <Button title="Create Charge" />
-      </View>
-    );
-  }
-=======
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 import {inject} from 'mobx-react'
@@ -22,24 +7,27 @@ export default class Homepage extends React.Component {
     render() {
       return (
         <View style={styles.container}>
-          <Text>Monthly Budget: </Text>
-          <Text>{"What's Left: "}</Text>
-          <Button
-            title="Create Charge"
-            onPress={this.props.page.newCharge}
-          />
+          <View style={{paddingBottom: 10}}>
+            <Text style={{fontSize: 20}}>Budgeteer</Text>
+          </View>
+          <View style={{flex: 1,justifyContent: "center"}}>
+            <Text>Monthly Budget: </Text>
+            <Text>{"What's Left: "}</Text>
+            <Button
+              title="Create Charge"
+              onPress={this.props.page.newCharge}
+            />
+          </View>
         </View>
-      );
+      )
     }
-
->>>>>>> 79c96da28e5ad8efb317427ba4cda5dd3282bb17
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#A2FFB1",
     alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: "#fff",
+    paddingTop: 20,
   }
 });

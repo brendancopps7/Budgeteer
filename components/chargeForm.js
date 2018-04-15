@@ -25,7 +25,7 @@ export default class ChargeForm extends React.Component {
     return (
       <View style={styles.container}>
         <View style={{paddingBottom: 10,alignItems: "center"}}>
-          <Text>New Charge</Text>
+          <Text style={{fontSize: 20}}>New Charge</Text>
         </View>
         <View style={{flex: 1,justifyContent: "center"}}>
           <Form type={chargeForm} />
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    padding: 20,
+    paddingTop: 20,
   },
 
   buttonText: {

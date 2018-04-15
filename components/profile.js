@@ -1,6 +1,6 @@
 import React from "react";
 import t from "tcomb-form-native";
-import { StyleSheet, Text, View, FlatList, Form } from "react-native";
+import { StyleSheet, Text, View, FlatList } from "react-native";
 
 var Form = t.form.Form;
 const incomeFreq = t.enums({
@@ -25,6 +25,9 @@ export default class Profile extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <View style={{paddingBottom: 10,alignItems: "center"}}>
+          <Text style={{fontSize: 20}}>Profile</Text>
+        </View>
         <Form type={incomeFreq} />
         <Form type={income} />
         <Form type={savingsContrib} />
@@ -51,8 +54,22 @@ export default class Profile extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#A2FFB1",
-    alignItems: "center",
+    paddingTop: 20,
+    backgroundColor: "#fff",
+  },
+  buttonText: {
+    fontSize: 18,
+    color: "white",
+    alignSelf: "center"
+  },
+  button: {
+    height: 36,
+    backgroundColor: "#48BBEC",
+    borderColor: "#48BBEC",
+    borderWidth: 1,
+    borderRadius: 8,
+    marginBottom: 10,
+    alignSelf: "stretch",
     justifyContent: "center"
   }
 });
