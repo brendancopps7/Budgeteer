@@ -5,7 +5,6 @@ import { StyleSheet, Text, View } from "react-native"
 @inject('page') @observer
 export default class Context extends React.Component {
   render() {
-    console.log('render')
     let Component = this.props.page.currentPageComponent
     return (
       <View style={{flex: 1}}>

@@ -39,7 +39,6 @@
 		6D075F8660528C9F96525AD8 /* libPods-BudgeteerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5695BDD879D26EDF46ACBD44 /* libPods-BudgeteerTests.a */; };
 		6D47299F2082F13B009C165D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D47299E2082F13B009C165D /* GoogleService-Info.plist */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		88108B0997F24595A5A2A738 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 558D6DB060C1447AB37F620C /* libRNSVG-tvOS.a */; };
 		A6AE55F27E754BF5618F8E4F /* libPods-Budgeteer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A60F3C4FDB998D220E9577 /* libPods-Budgeteer-tvOSTests.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		CFC107D26CB242A094A2AC31 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCCC2D97C8E42D8A24963C3 /* libRNFirebase.a */; };
@@ -417,7 +416,6 @@
 				F97CB1706974D75EA10B1FB4 /* libPods-Budgeteer.a in Frameworks */,
 				CFC107D26CB242A094A2AC31 /* libRNFirebase.a in Frameworks */,
 				48EFEDFA8D0C414C827D4F22 /* libRNSVG.a in Frameworks */,
-				88108B0997F24595A5A2A738 /* libRNSVG-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
